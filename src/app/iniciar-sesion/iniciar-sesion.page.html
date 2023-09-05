@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true">
+  <div class="cabezera">
+    <ion-buttons slot="start">
+      <ion-menu-button color="dark"></ion-menu-button>
+    </ion-buttons>
+  </div>
+  <div>
+    <ion-img class="logo-tellevo" src="../../assets/icon/Cool Text - TeLlevo 442432462677517.png"></ion-img>
+  </div>
+  <form action="">
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col>
+          <div text-center>
+          </div>
+          <div padding>
+            <ion-item>
+              <ion-label>
+                <ion-icon name="mail-outline"></ion-icon>
+              </ion-label>
+              <ion-input type="text" placeholder="Correo"></ion-input>
+            </ion-item>
+            <ion-item class="item">
+              <ion-label>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+              </ion-label>
+              <ion-input type="password"  placeholder="Contraseña">
+              </ion-input>
+            </ion-item>
+          </div>
+          <div padding class="boton-inicio">
+            <ion-button href="/inicio" size="default" shape="round" expand="block" class="iniciar">Iniciar</ion-button>
+            <div>
+              <ion-button fill="clear" size="small" href="/recup-contr">Olvidé mi contraseña</ion-button>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

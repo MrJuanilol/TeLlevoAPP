@@ -1,0 +1,13 @@
+<ion-content [fullscreen]="true">
+  <div class="cabezera">
+    <ion-buttons slot="start">
+      <ion-menu-button color="dark"></ion-menu-button>
+      <ion-label id="saludo">Bienvenido usuario!</ion-label>
+    </ion-buttons>
+  </div>
+  <div class="bienvenido">
+  </div>
+  <div class="busqueda">
+    <ion-searchbar id="searchbar" [(ngModel)]="searchQuery" placeholder="¿Donde quieres vamos?"></ion-searchbar>
+  </div>
+</ion-content>

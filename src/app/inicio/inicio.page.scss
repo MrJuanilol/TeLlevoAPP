@@ -1,0 +1,30 @@
+ion-content,ion-header{
+    --background: transparent;
+    background-image: url(../../assets/icon/mapa_falso.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+.cabezera{
+    background:transparent;
+    margin-top: 10px;
+}
+
+.bienvenido{
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.busqueda{
+    
+    background-color: #ffffff;
+    margin-top: 130%;
+    height: 40px;
+    border-radius: 8px;
+}
+.searchbar {
+    transform: translateY(0%);
+    background-color: #FF0000; 
+    color: #00FF00;
+}
