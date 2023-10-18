@@ -120,4 +120,30 @@ ion-item.selected {
 
 ion-list{
   background-color: blue($color: #000000);
+<<<<<<< HEAD
+}
+
+
+// *CLIMA
+.clima{
+  display: grid;
+  margin-top: 20px;
+  // border: 1px solid blue;
+  
+  box-shadow: 0 0 4px rgb(102, 102, 102);
+  
+}
+
+.clima p{
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.clima ion-label{
+  padding-top: 10px;
+  padding-left: 10px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-style: italic;
+=======
+>>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
 }

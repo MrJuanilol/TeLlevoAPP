@@ -1,11 +1,20 @@
 ion-content,ion-header{
     --background: transparent;
+<<<<<<< HEAD
+}
+
+#map {
+    height: 90%;
+  }
+
+=======
     background-image: url(../../assets/icon/mapa_falso.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
 }
 
+>>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
 .cabezera{
     background:transparent;
     margin-top: 10px;
@@ -13,6 +22,18 @@ ion-content,ion-header{
 
 .bienvenido{
     margin-left: 10px;
+<<<<<<< HEAD
+    font-size: 3000px;
+
+}
+
+.busqueda{
+    height: 10vh;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border-color: #FF0000;
+    
+=======
     font-size: 30px;
 }
 
@@ -22,9 +43,14 @@ ion-content,ion-header{
     margin-top: 130%;
     height: 40px;
     border-radius: 8px;
+>>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
 }
 .searchbar {
     transform: translateY(0%);
     background-color: #FF0000; 
     color: #00FF00;
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
 }

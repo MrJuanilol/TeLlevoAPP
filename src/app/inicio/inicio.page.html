@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+<ion-header >
+  <div class="cabezera">
+    <ion-buttons slot="start">
+      <ion-menu-button color="dark"></ion-menu-button>
+      <ion-label id="saludo">Bienvenido {{ nombre }} !</ion-label>
+    </ion-buttons>
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div id="map"></div>
+    <div class="busqueda">
+    <ion-searchbar id="searchbar" [(ngModel)]="searchQuery" placeholder="¿Donde quieres vamos?"></ion-searchbar>
+  </div>
+  
+=======
 <ion-content [fullscreen]="true">
   <div class="cabezera">
     <ion-buttons slot="start">
@@ -10,4 +27,5 @@
   <div class="busqueda">
     <ion-searchbar id="searchbar" [(ngModel)]="searchQuery" placeholder="¿Donde quieres vamos?"></ion-searchbar>
   </div>
+>>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
 </ion-content>
