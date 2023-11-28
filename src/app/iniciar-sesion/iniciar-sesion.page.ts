@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AlertController, MenuController } from '@ionic/angular';
-=======
->>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
 
 @Component({
   selector: 'app-iniciar-sesion',
@@ -13,7 +10,6 @@ import { AlertController, MenuController } from '@ionic/angular';
 })
 export class IniciarSesionPage implements OnInit {
 
-<<<<<<< HEAD
   formIniciar: FormGroup;
 
   constructor(private router: Router, menu: MenuController, private alertController: AlertController, public fb: FormBuilder) {
@@ -22,14 +18,10 @@ export class IniciarSesionPage implements OnInit {
       'contra': new FormControl("", Validators.required)
     })
   }
-=======
-  constructor() { }
->>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
 
   ngOnInit() {
   }
 
-<<<<<<< HEAD
   async ingresar() {
     var f = this.formIniciar.value;
 
@@ -61,6 +53,4 @@ export class IniciarSesionPage implements OnInit {
       return;
     }
   }
-=======
->>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
 }

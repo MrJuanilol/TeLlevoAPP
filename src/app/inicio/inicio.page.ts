@@ -1,49 +1,34 @@
-<<<<<<< HEAD
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AnimationController, Animation } from '@ionic/angular';
 
-declare var google: any; 
+declare var google: any;
 
-=======
-import { Component,} from '@angular/core';
-import { AnimationController, Animation } from '@ionic/angular';
-
->>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',
   styleUrls: ['./inicio.page.scss'],
 })
 export class InicioPage {
-<<<<<<< HEAD
   nombre = localStorage.getItem('nombre');
-  
+
   map: any;
 
-=======
-  
->>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
   searchQuery: string = '';
   searchbarVisible: boolean = false;
   animationCompleted: boolean = false;
 
-<<<<<<< HEAD
-  constructor(private animationCtrl: AnimationController ) {}
-=======
-  constructor(private animationCtrl: AnimationController) {}
->>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
-  ionViewDidEnter(){
+  constructor(private animationCtrl: AnimationController) { }
+  ionViewDidEnter() {
     this.mostrarSearchbar();
     this.mostrarLabel();
   }
-<<<<<<< HEAD
 
   ngOnInit() {
     this.mostrarLabel();
     this.mostrarSearchbar();
     this.initMap();
   }
-  
+
   initMap() {
     var myLatlng = new google.maps.LatLng(-33.68142157785643,-71.22594634660035);
     
@@ -62,8 +47,6 @@ export class InicioPage {
     marker.setMap(map);
   }
 
-=======
->>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
   mostrarSearchbar() {
     // Configura la visibilidad como verdadera para mostrar el ion-searchbar
     this.searchbarVisible = true;
@@ -76,13 +59,13 @@ export class InicioPage {
       const animation: Animation = this.animationCtrl.create()
         .addElement(searchbar)
         .duration(600)
-        
+
         .fromTo('transform', 'translateY(100%)', 'translateY(0%)');
       animation.onFinish(() => {
-          
-          searchbar.style.transform = 'translateY(100%)'; 
-          
-          this.animationCompleted = true;
+
+        searchbar.style.transform = 'translateY(100%)';
+
+        this.animationCompleted = true;
       });
       // Inicia la animación
       animation.play();

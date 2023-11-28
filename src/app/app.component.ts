@@ -1,42 +1,39 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-import {Router  } from '@angular/router';
+import { Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 import { Share } from '@capacitor/share';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-=======
->>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
+import { Geolocation } from '@capacitor/geolocation';
+
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
-<<<<<<< HEAD
-export class AppComponent  {
+
+export class AppComponent {
+  cityName: string = '';
   translatedDescription: any;
   jsonData: any;
-=======
-export class AppComponent {
->>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
   public appPages = [
     { title: 'Iniciar Sesion', url: '/iniciar-sesion', icon: 'person-circle' },
-    { title: '¿Quienes Somos?', url: '/contacto', icon: 'mail' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-<<<<<<< HEAD
 
 
-  constructor(public router: Router, private menu: MenuController, public httpClient:HttpClient, ) {
+  constructor(public router: Router, private menu: MenuController, public httpClient: HttpClient, private geolocation: Geolocation) {
     this.fetchData();
   }
 
-  compartirAPP(){
+  compartirAPP() {
     Share.share({
       title: 'Compartir APP',
-      url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley',
+      url: 'https://usuario2.talleresmelipilla.cl/TeLlevo.apk',
       dialogTitle: 'Es perfecta !.'
     })
   }
+
   fetchData() {
     const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=-33.6861&lon=-71.2169&appid=8f12d732c06c59b005672534b1a0504e';
     this.httpClient.get(apiUrl).subscribe((data) => {
@@ -53,7 +50,7 @@ export class AppComponent {
   }
 
   convertKelvinToCelsius(tempKelvin: number): number {
-    return parseFloat ((tempKelvin - 273.15).toFixed(0));
+    return parseFloat((tempKelvin - 273.15).toFixed(0));
   }
 
   translateDescription(description: string) {
@@ -75,9 +72,11 @@ export class AppComponent {
     });
   }
 
-  
+  cerrarSesion(){
+    localStorage.removeItem('autenticado');
+    this.router.navigate(["/iniciar-sesion"]);
+    this.menu.close();
+  }
 
-=======
-  constructor() {}
->>>>>>> 7e679b35876fddfc178fa95c0541a936c8bc38b2
+
 }
